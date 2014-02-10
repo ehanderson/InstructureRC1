@@ -3,8 +3,8 @@ class Submission < ActiveRecord::Base
   belongs_to :assignment
   belongs_to :student
 
+  validates :student_id, presence: true
+  validates :assignment_id, presence: true
+  validates :grade, presence: true
 
-  def self.grade(assignment)
-    submissions.find {|s| s.assignment_id == assign.id }.try(:grade)
-  end
 end

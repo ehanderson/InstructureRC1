@@ -6,7 +6,4 @@ class Student < ActiveRecord::Base
   validates :name, presence: true
 
 
-  def self.grade(assignment)
-    submissions.find {|s| s.assignment_id == assign.id }.try(:grade)
-  end
 end
