@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     Benchmark.bm do |bm|
       bm.report do
         @assignments = Assignment.all
-        @students = Student.includes(:assignments)
+        @students = Student.order('id').includes(:assignments)
       end
     end
     render :show

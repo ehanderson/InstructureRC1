@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+tbody tr:first-child, tr:nth-child(10){
+  background-color: yellow;
+
+}
+

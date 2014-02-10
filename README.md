@@ -3,12 +3,12 @@
 This problem asked us to consider three data models.
 The submission model is a join table for both students and assignments.
 From here I assume I have access to a database with this information.
-To create this senerio, I made a quick sinatra app.
+To create this senerio, I made a quick rails app.
 
 In order to optimize the speed and efficiency of this problem, we can set up associations between them.
 By setting up associations, we are able to look up information without having to iterate through each model everytime looking for/ comparing specific attributes.
 
-If this problem were more complex, optimization would require limiting th controllers' responsibilities and making sure to build out class methods within the model.
+If this problem were more complex, optimization would require limiting th controllers' responsibilities and making sure to build out class methods within the model. There are further comments throughout the code to get a better idea of the thought process I had as the app was created.
 
 ### Setting Up the Application
 
@@ -23,11 +23,12 @@ The rake commands could take a minute.  Once it's done run `rails server` and vi
 
 The 'view data' button allows you to view the desired data output.
 
-Tests are currently being created to confirm accuracy so until they are launched, the rake console can be used to verify.
+Benchmark is currently running as a mini time test, view your server to verify.
 
-The development environment is currently set up for this app.
+The development environment is currently set up for this app as is the test; however, this is definitely NOT fully tested nor is it even close to be ready for production. This app is to demonstrate optimization of displaying the requested data.
 
 #### Future Features Coming Soon:
 
-- RSpec Tests
-- Validations for seed data
+- RSpec Testing
+- More validations data
+- Anything else that is requested!
