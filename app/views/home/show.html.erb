@@ -1,8 +1,8 @@
 <h4>Happy Path</h4>
 <p>Again, since we are not writing a full program, I have chosen not to write out full RSpec tests- conscious decision since the request was for app optimization; thus I used simple speed testing such as Benchmark. </p>
 <p>That being said, since the data is fixed, if all went to well: <br>
-  Tommmmmmmmy's grade for Ruby should be an 84 which I can see below is true. <br>
-  Bobbbbbbbby's grade for productize web-enabled e-business should be a 100, again true.</p>
+  Tommmmmmmmy's grade for Ruby should be an 93 which I can see below is true. <br>
+  Bobbbbbbbby's grade for productize web-enabled e-business should be a 73, again true.</p>
 <p> Our happy path has a known outcome that should execute without exception. </p>
 
 <h1>Grading Grid</h1>
@@ -20,7 +20,7 @@
       <tr>
       <td><%=student.name%></td>
         <%student.assignments.each do |assign|%>
-          <td><%=student.submissions.order('id').find {|s| s.assignment_id == assign.id}.try(:grade)%></td>
+          <td><%=student.submissions.find {|s| s.assignment_id == assign.id}.try(:grade)%></td>
         <%end%>
       </tr>
     <%end%>

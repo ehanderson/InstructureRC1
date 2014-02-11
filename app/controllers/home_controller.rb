@@ -12,8 +12,8 @@ class HomeController < ApplicationController
     end
     render :show
   end
-end
 
+end
 #.includes allows the database to conly be called once and thus preventing any calls from the view
 
 

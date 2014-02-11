@@ -25,7 +25,7 @@ The 'view data' button allows you to view the desired data output.
 
 Benchmark is currently running as a mini time test, view your server to verify.
 
-The development environment is currently set up for this app as is the test; however, this is definitely NOT fully tested nor is it even close to be ready for production. This app is to demonstrate optimization of displaying the requested data.
+The development environment is currently set up for this app as is the test; however, this is definitely NOT fully tested nor is it even close to be ready for production. Run it in development. This app is to demonstrate optimization of displaying the requested data.
 
 #### Future Features Coming Soon:
 
